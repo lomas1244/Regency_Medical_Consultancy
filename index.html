@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+
+        <title>Regency Medical Consultancy</title>
+        <meta name="author" content="James Lomas" />
+        <meta name="description" content="London Medical Consultancy" />
+        <meta name="keywords"  content="Medical,Medicine,Consultancy,Private,Royalty,Best,High Quality, Medical Consultancy" />
+        <meta name="Resource-type" content="Document" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
+
+
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-faded">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/rm-logo-part.svg" width="40" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <!--just add these span here-->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <!--/end span-->
+            </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Book a consultation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Version -->
+        <section id="mobile-version">
+
+            <div id="fullpage">
+
+                <div class="section " id="section0">
+                    <h1></h1>
+                    <a>
+                        <div class="center-con">
+                            <div class="round">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="section" id="section1">
+
+                    <div class="slide" id="slide1">
+                        <div style="height: 85vh;" class="container">
+                            <div class="row rml-border">
+                                <div class="col">
+                                    <h2>Book now</h2>
+                                    <p>Private consultations are available at the disgression of the client.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="slide2">
+                        <h1>Totally customizable</h1>
+                    </div>
+
+                </div>
+
+                <div class="section" id="section2"><h1>Lovely images <br/>for a lovely page</h1></div>
+                <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+            </div>
+
+        </section>
+
+        <!-- Desktop Version -->
+        <section id="desktop-version">
+
+        </section>
+
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: false,
+            navigation: true,
+
+            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+            css3:false
+        });
+    </script>
+
+    <script>
+        $(function() {
+            //toggle class open on button
+            $('#exCollapsingNavbar').on('hide.bs.collapse', function () {
+                $('.navbar-toggler').removeClass('open');
+            })
+            $('#exCollapsingNavbar').on('show.bs.collapse', function () {
+                $('.navbar-toggler').addClass('open');
+            })
+        });
+    </script>
+</html>
