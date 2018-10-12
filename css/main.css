@@ -74,7 +74,7 @@ button:focus {
     color: gold;
 }
 	#section2{
-		background-image: url(../img/lmc_bg_4.jpg);
+		background-image: url(../img/lmc_bg_4.gif);
 		padding: 6% 0 0 0;
         background-position: center;
         background-size: cover;
@@ -255,6 +255,14 @@ button:focus {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+
+/* Homepage Nav */
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #E6C200;
+    margin-bottom: 2em;
 }
 
 
