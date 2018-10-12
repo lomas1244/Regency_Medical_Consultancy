@@ -38,19 +38,21 @@ html, body {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     line-height: 130%;
+    margin: 0;
 }
 
 .rmc-para-2 {
     line-height: 130%;
+    margin: 0;
 }
 
 .rmc-card {
     background: #fff;
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 1em;
     margin-bottom: 0.5em;
-    min-height: 10em;
     border: 3px solid #B59755;
+    min-height: 8em;
 }
 
 	/* Centered texts in each section
