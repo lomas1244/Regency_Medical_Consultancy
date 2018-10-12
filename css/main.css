@@ -29,7 +29,7 @@ html, body {
 
 .rmc-row h2 {
     font-size: 1rem;
-    color: 
+    text-align: left;
 }
 
 .rmc-para {
@@ -38,11 +38,19 @@ html, body {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     line-height: 130%;
-    margin-bottom: 1em;
 }
 
 .rmc-para-2 {
     line-height: 130%;
+}
+
+.rmc-card {
+    background: #fff;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    min-height: 10em;
+    border: 3px solid #B59755;
 }
 
 	/* Centered texts in each section
