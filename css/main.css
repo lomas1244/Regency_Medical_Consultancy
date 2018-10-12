@@ -4,20 +4,45 @@
 html, body {
     font-family: 'NTR', sans-serif;
 }
-	h1{
-		color: #E6C200;
-		margin:0;
-		padding:0;
-	}
 
 .rml-border {
     padding-top: 1rem;
 }
 
-.rml-border h2 {
-    color: #000;
-    text-align: left;
-    margin-top: 1rem;
+.rmc-con {
+    padding-top: 4em;
+    text-align: justify;
+}
+
+.rmc-con h1 {
+    padding: 0;
+}
+
+.rmc-row {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.rmc-row p {
+    color: #7e7e7e;
+}
+
+.rmc-row h2 {
+    font-size: 1rem;
+    color: 
+}
+
+.rmc-para {
+    border-top: 1px solid #B59755;
+    border-bottom: 1px solid #B59755;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 130%;
+    margin-bottom: 1em;
+}
+
+.rmc-para-2 {
+    line-height: 130%;
 }
 
 	/* Centered texts in each section
@@ -60,7 +85,7 @@ button:focus {
 	/* Defining each sectino background and styles
 	* --------------------------------------- */
 	#section0{
-		background-image: url(../img/lmc_bg_5.gif);
+		background-image: url(../img/rmc_bg_6.gif);
         background-position: center;
         background-size: cover;
 	}
@@ -89,18 +114,42 @@ button:focus {
 		background-image: url(imgs/bg4.jpg);
 		padding: 6% 0 0 0;
 	}
-	#section3 h1{
-		color: #000;
-	}
 
 
 /* Media Query */
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) { 
+
+        .contact-card {
+            display: none;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    h1 {
+        font-size: 1.2rem;
+        color: #333;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 0;
+    }
+}
 
 @media only screen and (min-width: 1025px) {
     
     #mobile-version {
         display: none;
     }
+    
 }
 
 
@@ -111,11 +160,6 @@ button:focus {
 		padding: 6% 0 0 0;
 	}
 
-#slide1 h1 {
-        top: 50%;
-		transform: translateY(-50%);
-        position: relative;
-        padding: 1em;
     }
 	#slide2{
 		background-image: url(imgs/bg5.jpg);

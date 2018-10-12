@@ -2,7 +2,7 @@
 .cbp-spmenu {
 	background: #fff;
 	position: fixed;
-    border-right: 6px solid rgba(230,194,0,0.8);
+    border-right: 4px solid #B59755;
 }
 
 .cbp-spmenu h3 {
@@ -42,7 +42,7 @@
 }
 
 .cbp-spmenu-vertical a {
-	border-bottom: 1px solid #E6C200;
+	border-bottom: 1px solid #B59755;
 	padding: 1em;
 }
 
@@ -142,7 +142,7 @@
 .cbp-spmenu .contact-card .contact-desc {
     font-size: 0.8em;
     line-height: 115%;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.4em;
 }
 
 /* Transitions */
