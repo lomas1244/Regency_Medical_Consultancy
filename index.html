@@ -4,6 +4,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
 
+        <link rel="shortcut icon" type="image/png" href="img/rmc-favicon.png"/>
+
         <title>Regency Medical Consultancy</title>
         <meta name="author" content="James Lomas" />
         <meta name="description" content="London Medical Consultancy" />
@@ -24,14 +26,69 @@
 
         <!-- Slide menu -->
         <link rel="stylesheet" type="text/css" href="css/Slide_menu/component.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <!-- Flickity slider -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     </head>
 
     <body class="cbp-spmenu-push">
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+             attribution=setup_tool
+             page_id="320570731858598"
+             theme_color="#B59755">
+        </div>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-faded">
             <a class="navbar-brand" href="index.html">
                 <img src="img/rm-logo-part.svg" width="40" height="40" alt="">
             </a>
+
+            <div class="collapse navbar-collapse desktop-nav" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="mailto:ruhinkarim@regencymedical.co.uk"><i class="fas fa-comments"></i></a>
+                    <a href="tel:+441329836262"><i class="fas fa-phone"></i></a>
+                    <a style="color: #fff !important;" class="btn btn-rmc typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
+                </form>
+            </div>
+
+
             <button id="showLeft" class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <!--just add these span here-->
                 <span></span>
@@ -44,7 +101,7 @@
 
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
             <h3></h3>
-            <a href="#firstPage">Book a consultation</a>
+            <a class="typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
             <a href="#secondPage">Home visit</a>
             <a href="#thirdPage">Private sexual health</a>
             <a href="#fourthPage">Emergency channel</a>
@@ -78,44 +135,86 @@
                 </div>
 
                 <div class="section" id="section1">
-                        <div class="container rmc-con">
-                            <div class="row rmc-row">
-                                <div class="col-md-6">
-                                    <h1>WHY CHOOSE US?</h1>
-                                    <p class="rmc-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                    <div class="container rmc-con">
+                        <div style="padding-top: 3rem;" class="row rmc-row">
+                            <div class="col-md-6 rmc-part">
+                                <h1>WHY CHOOSE US?</h1>
+                                <p style="border-bottom: none;" class="rmc-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mobile-carousel">
+                                    <div style="width: 100%;" class="carousel-cell">
+                                        <div class="rmc-card">
+                                            <h2>PERSONALISED SERVICE</h2>
+                                            <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%;" class="carousel-cell">
+                                        <div class="rmc-card">
+                                            <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                            <p class="rmc-para">All our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%;" class="carousel-cell">
+                                        <div class="rmc-card">
+                                            <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                            <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
 
                 <div class="section" id="section2">
                     <div class="container rmc-con">
                         <div class="row rmc-row">
-                            <div class="col-md-6">
-                                    <div class="rmc-card">
-                                        <h2>PERSONALISED SERVICE</h2>
-                                        <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
-                                    </div>
-                                    <div class="rmc-card">
-                                        <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
-                                        <p class="rmc-para">All our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
-                                    </div>
-                                    <div class="rmc-card">
-                                        <h2>NO FORMAL REGISTRATION REQUIRED</h2>
-                                        <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
-                                    </div>
-                                </div>
                         </div>
                     </div>
                 </div>
                 <div class="section" id="section3">
                     <div class="slide" id="slide1">
+                        <div class="card-body service-card">
+                            <h3 class="card-title">Home visiting</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                            <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
+                            <a href="#" class="card-link">Read more</a>
+                            <a href="#" class="card-link">Book now</a>
+                            <i class="fab fa-fort-awesome fa-2x"></i>
+                        </div>
+
                     </div>
                     <div class="slide" id="slide2">
+                        <div class="card-body service-card">
+                            <h3 class="card-title">Sexual health screening</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                            <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
+                            </p>
+                            <a href="#" class="card-link">Read more</a>
+                            <a href="#" class="card-link">Book now</a>
+                            <i class="fas fa-briefcase-medical fa-2x"></i>
+                        </div>
                     </div>
                     <div class="slide" id="slide3">
+                        <div class="card-body service-card">
+                            <h3 class="card-title">Medical repatriation</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                            <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
+                            <a href="#" class="card-link">Read more</a>
+                            <a href="#" class="card-link">Book now</a>
+                            <i class="fas fa-plane fa-2x"></i>
+                        </div>
                     </div>
                     <div class="slide" id="slide4">
+                        <div class="card-body service-card">
+                            <h3 class="card-title">Global case management</h3>
+                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                            <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
+                            <a href="#" class="card-link">Read more</a>
+                            <a href="#" class="card-link">Book now</a>
+                            <i class="fas fa-globe fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,7 +224,256 @@
         <!-- Desktop Version -->
         <section id="desktop-version">
 
+            <div class="jumbotron rmc-jumbo">
+            </div>
+
+            <div class="rmc-banner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <a class="btn btn-rmc btn-block btn-lg typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">
+                                Book a consultation
+                            </a>
+                            <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rmc-1" class="container rmc-blank">
+                <div class="row rmc-row">
+                    <div class="col-md-6">
+                        <h1>WHY CHOOSE US?</h1>
+                        <p class="rmc-para rmc-desk-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="rmc-table">
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>PERSONALISED SERVICE</h2>
+                                        <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                        <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                        <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="rmc-2" class="rmc-neg">
+                <div class="container">
+                    <div class="row rmc-row">
+                        <div class="col-md-6 rmc-style-neg">
+                            <h1>VIP SERVICES</h1>
+                            <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
+                        </div>
+                    </div>
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <div class="card service-card" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Home visiting</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                    <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
+                                    <a href="#" class="card-link">Read more</a>
+                                    <a href="#" class="card-link">Book now</a>
+                                    <i class="fab fa-fort-awesome fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="card service-card" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Sexual health screening</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                    <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
+                                    </p>
+                                    <a href="#" class="card-link">Read more</a>
+                                    <a href="#" class="card-link">Book now</a>
+                                    <i class="fas fa-briefcase-medical fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="card service-card" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Medical repatriation</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                    <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
+                                    <a href="#" class="card-link">Read more</a>
+                                    <a href="#" class="card-link">Book now</a>
+                                    <i class="fas fa-plane fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="card service-card" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h3 class="card-title">Global case management</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                    <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
+                                    <a href="#" class="card-link">Read more</a>
+                                    <a href="#" class="card-link">Book now</a>
+                                    <i class="fas fa-globe fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rmc-3">
+                <div class="container rmc-blank">
+                    <div style="margin-bottom: 3em;" class="row rmc-row">
+                        <div class="col-md-6">
+                            <h1>MEDICAL CONCIERGE</h1>
+                            <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
+                        </div>
+                    </div>
+                    <div class="row rmc-row">
+                        <div class="col-md-6">
+                            <table style="border-left: 1px solid #B59755;" class="rmc-table">
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>PERSONALISED SERVICE</h2>
+                                            <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                            <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                            <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="rmc-table">
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>PERSONALISED SERVICE</h2>
+                                            <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                            <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="rmc-card">
+                                            <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                            <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <i class="fas fa-check-circle"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="rmc-4" class="container">
+            </div>
+
+
+            <footer style="margin-bottom: 0;" class="rmc-neg rmc-row rmc-style-neg">
+                <div class="container">
+                    <h1>ABOUT US</h1>
+                    <div style="margin-bottom: 0;" class="row ">
+                        
+                        <div class="col-md-4">
+                            <p class="rmc-para rmc-desk-para">We have been operating from the world famous Harley Street in London, seeing and treating patients both from the UK and around the globe including Film Stars, Royalty and Foreign Dignitaries since 2002. Dr Ruhin Karim is the Medical Director and Lead Physician at Regency Medical. We offer a high-end VIP service to our discerning clients practicing traditional and personalised bespoke general practice. You can choose between seeing the doctor at 10 Harley Street, or the doctor will visit you at your home, hotel, or office.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="rmc-para rmc-desk-para">We know that it is difficult to get an appointment with your NHS GP, and more so, you may not see the same doctor on every visit. By recognising this deficiency, Regency Medical started to offer private services to all our patients since 2002. Furthermore, you may be a visitor or tourist and unexpectedly fallen ill, lost your medications, looking for the right specialist, or in need of an experienced doctor. Flexibility and choice as to how and when you use us, whether this means visiting us as a one-off or becoming a regular patient;</p>
+                        </div>
+                        <div class="col-md-4">
+                            <ul style="color: #7e7e7e;" class="rmc-para rmc-desk-para">
+                                <li>You will be always seen by an experienced doctor and never a nurse</li>
+                                <li>Appointments are available at times that suits you</li>
+                                <li>On-site medical testing and same-day imaging appointments</li>
+                                <li>You will have access to a large network of experienced private specialists</li>
+                                <li>Same-day Home Visiting Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="float: right;" class="row social-row">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-facebook-messenger fa-2x"></i>
+                    </div>
+                </div>
+            </footer>
+
         </section>
+
+
+
 
     </body>
 
@@ -208,16 +556,50 @@
         }
     </script>
 
+    <!-- Flickity slider -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            freeScroll: true
+        });
+    </script>
+
+
+    <script>
+        $('.mobile-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            freeScroll: true,
+            pageDots: false
+        });
+    </script>
+
+    <!-- FullPage JS -->
+
     <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             verticalCentered: false,
             navigation: true,
+            navigationPosition: 'left',
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            //Design
+            controlArrows: false,
 
             //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
             css3:false
         });
     </script>
+
+
+    <!-- NavBar mobile button -->
 
     <script>
         $(function() {

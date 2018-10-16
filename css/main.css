@@ -1,5 +1,5 @@
 /* Style for our header texts
-	* --------------------------------------- */
+* --------------------------------------- */
 
 html, body {
     font-family: 'NTR', sans-serif;
@@ -11,7 +11,7 @@ html, body {
 
 .rmc-con {
     padding-top: 4em;
-    text-align: justify;
+    text-align: left;
 }
 
 .rmc-con h1 {
@@ -51,15 +51,111 @@ html, body {
     border-radius: 0.5em;
     padding: 1em;
     margin-bottom: 0.5em;
-    border: 3px solid #B59755;
     min-height: 8em;
 }
 
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align: center;
-	}
+.rmc-part {
+    margin-bottom: 2em;
+}
+
+.form-inline i {
+    color: #B59755;
+    margin-right: 1em;
+}
+
+
+/* Desktop Site Styling ---------------------------- */
+
+.rmc-jumbo {
+    background-image: url(../img/rmc_bg_6.gif);
+    background-position: center;
+    background-size: cover;
+    height: 50em;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.rmc-table {
+    border-right: 1px solid #B59755;
+}
+
+.rmc-table td {
+    padding-right: 2em;
+}
+
+.rmc-table i {
+    color: #B59755;
+}
+
+.rmc-banner {
+    background-color: rgba(181,151,85, 0.7);
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-bottom: 3em;
+}
+
+.rmc-banner button {
+    text-align: center;
+}
+
+.btn-rmc {
+    background: #B59755;
+    border: 1px solid #B59755;
+    color: #fff;
+}
+
+.rmc-neg {
+    background: #000;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+}
+
+.rmc-blank {
+    margin-bottom: 4em;
+}
+
+.rmc-style-neg {
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+
+.social-row i {
+    margin-left: 1em;
+}
+
+
+
+/* RMC Services Slider ---------- */
+
+.service-card .card-title {
+    color: #B59755;
+} 
+
+.service-card .card-link {
+    color: #B59755;
+} 
+
+.service-card {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.flickity-page-dots .dot {
+    background: #B59755 !important;
+}
+
+.service-card i {
+    float: right;
+    color: #B59755;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align: center;
+}
 
 .navbar-toggler {
     border: none;
@@ -70,8 +166,8 @@ button:focus {
     outline: none;
 }
 
-    /* Navbar item styling dropdown
-	* --------------------------------------- */
+/* Navbar item styling dropdown
+* --------------------------------------- */
 
 .navbar-nav .nav-item {
     background-image: linear-gradient(to right, rgba(230,194,0,1), rgba(230,194,0,0));
@@ -80,53 +176,66 @@ button:focus {
     margin-top: 0.4rem;
 }
 
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	#section0,
-	#section1,
-	#section2,
-	#section3,
-    #slide1,
-    #slide2{
-		background-size: cover;
-		background-attachment: fixed;
-	}
 
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
-	#section0{
-		background-image: url(../img/rmc_bg_6.gif);
-        background-position: center;
-        background-size: cover;
-	}
-	#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
-	}
+.fp-slidesNav {
+    text-align: center;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3,
+#slide1,
+#slide2{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+    background-image: url(../img/rmc_bg_6.gif);
+    background-position: center;
+    background-size: cover;
+}
+#section0 h1{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
 
 #section1 {
-    color: gold;
 }
-	#section2{
-		background-image: url(../img/lmc_bg_4.gif);
-		padding: 6% 0 0 0;
-        background-position: center;
-        background-size: cover;
-	}
+#section2 {
+    background: #000;
+    padding: 6% 0 0 0;
+    background-position: center;
+    background-size: cover;
+}
 
-    #section2 h1 {
-        top: 50%;
-		transform: translateY(-50%);
-        position: relative;
-    }
-	#section3{
-		background-image: url(imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
+#section2 h1 {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+#section3 {
+    background-image: url(imgs/bg4.jpg);
+    padding: 6% 0 0 0;
+    text-align: left;
+}
 
 
-/* Media Query */
+/* RMC Footer
+* --------------------------------------- */
+
+footer {
+    background: #000;
+}
+
+
+/* Mobile media query styling alterations --------------- */
 
 
 @media only screen 
@@ -141,12 +250,12 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
-    
+
     h1 {
         font-size: 1.2rem;
         color: #333;
     }
-    
+
     h2 {
         font-size: 1rem;
         color: #333;
@@ -154,27 +263,86 @@ button:focus {
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    
-    #mobile-version {
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+    .desktop-nav .nav-item {
+        background: none;
+    }
+
+    .desktop-nav li a {
+        color: #B59755;
+    }
+
+    #desktop-version {
         display: none;
     }
-    
+
 }
 
 
-	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		background-image: url(imgs/bg2.jpg);
-		padding: 6% 0 0 0;
-	}
+/* Desktop media query styling alterations --------------- */
 
+
+@media only screen and (max-width: 1024px) {
+
+    #desktop-version {
+        display: none;
     }
-	#slide2{
-		background-image: url(imgs/bg5.jpg);
-		padding: 6% 0 0 0;
-	}
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    
+    html, body {
+        overflow: scroll !important; 
+    }
+
+    #mobile-version {
+        display: none;
+    }
+
+    .desktop-nav .nav-item {
+        background: none;
+    }
+
+    .desktop-nav a {
+        color: #B59755 !important;
+    }
+
+    #fp-nav {
+        display: none;
+    }
+
+    .rmc-card {
+        border: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        min-height: inherit;
+    }
+
+    .rmc-card h2 {
+        margin-bottom: 0;
+    }
+
+    .rmc-para {
+        border: none;
+    }
+
+    .rmc-desk-para {
+        border-top: 1px solid #B59755;
+        border-bottom: 1px solid #B59755;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+.slide{
+    padding: 6% 0 0 0;
+}
 
 /* Animated arrow */
 
@@ -254,61 +422,61 @@ button:focus {
 
 /*remove bootstrap default svg background */
 .navbar-light .navbar-toggler {
-  background: none;
+    background: none;
 }
 
 /* hamburger classes and animation */
 .navbar-toggler {
-  cursor: pointer;
-  position: relative;
-  width: 2.5rem;
-  height: 2rem;
+    cursor: pointer;
+    position: relative;
+    width: 2.5rem;
+    height: 2rem;
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  font-size: 1.25rem;
-  line-height: 1rem;
-  border-radius: .25rem;
-  border: none;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    border-radius: .25rem;
+    border: none;
 }
 .navbar-toggler span {
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 75%;
-  background: #e6c200;
-  border-radius: 3px;
-  opacity: 1;
-  left: 25%;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  transition: .25s ease-in-out;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 75%;
+    background: #e6c200;
+    border-radius: 3px;
+    opacity: 1;
+    left: 25%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 }
 .navbar-toggler span:nth-child(1) {
-  top: 34.5%;
+    top: 34.5%;
 }
 .navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3) {
-  top: 50%;
+    top: 50%;
 }
 .navbar-toggler span:nth-child(4) {
-  top: 65.5%;
+    top: 65.5%;
 }
 .navbar-toggler.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
 .navbar-toggler.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .navbar-toggler.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .navbar-toggler.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
 
 
@@ -323,18 +491,18 @@ button:focus {
 
 
 
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	</style>
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+</style>
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+<!--[if IE]>
+<script type="text/javascript">
+var console = { log: function() {} };
+</script>
+<![endif]-->
 
 
 
