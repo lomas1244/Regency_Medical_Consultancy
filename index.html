@@ -61,24 +61,25 @@
             <div class="collapse navbar-collapse desktop-nav" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Regency Medical</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Consierge</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIP Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Home visit</a>
+                            <a class="dropdown-item" href="#">Rapid home screening</a>
+                            <a class="dropdown-item" href="#">Medical repatriation</a>
+                            <a class="dropdown-item" href="#">Global case management</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Book now</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Disabled</a>
+                        <a class="nav-link" href="#">Harley Street</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -224,6 +225,25 @@
         <!-- Desktop Version -->
         <section id="desktop-version">
 
+            <!-- The social media icon bar -->
+            <div class="icon-bar">
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a> 
+                <a href="#" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a> 
+                <a href="#" class="google">
+                    <i class="fab fa-google-plus-g"></i>
+                </a> 
+                <a href="#" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="messenger">
+                    <i class="fab fa-facebook-messenger"></i>
+                </a> 
+            </div>
+
             <div class="jumbotron rmc-jumbo">
             </div>
 
@@ -295,34 +315,38 @@
                             <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
                         </div>
                     </div>
-                    <div class="main-carousel">
-                        <div class="carousel-cell">
-                            <div class="card service-card" style="width: 20rem;">
+
+                    <div class="row rmc-row" style="margin-bottom: 2em;">
+                        <div class="col-md-6">
+                            <div class="card service-card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Home visiting</h3>
+                                    <h3 class="card-title">Home visits</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                                     <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
-                                    <a href="#" class="card-link">Read more</a>
+                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
                                     <a href="#" class="card-link">Book now</a>
                                     <i class="fab fa-fort-awesome fa-2x"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-cell">
-                            <div class="card service-card" style="width: 20rem;">
+                        <div class="col-md-6">
+                            <div class="card service-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Sexual health screening</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                                     <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
                                     </p>
-                                    <a href="#" class="card-link">Read more</a>
+                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#sexualHealth">Read more</a>
                                     <a href="#" class="card-link">Book now</a>
                                     <i class="fas fa-briefcase-medical fa-2x"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-cell">
-                            <div class="card service-card" style="width: 20rem;">
+                    </div>
+
+                    <div class="row rmc-row">
+                        <div class="col-md-6">
+                            <div class="card service-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Medical repatriation</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
@@ -333,8 +357,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-cell">
-                            <div class="card service-card" style="width: 20rem;">
+                        <div class="col-md-6">
+                            <div class="card service-card">
                                 <div class="card-body">
                                     <h3 class="card-title">Global case management</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
@@ -444,7 +468,7 @@
                 <div class="container">
                     <h1>ABOUT US</h1>
                     <div style="margin-bottom: 0;" class="row ">
-                        
+
                         <div class="col-md-4">
                             <p class="rmc-para rmc-desk-para">We have been operating from the world famous Harley Street in London, seeing and treating patients both from the UK and around the globe including Film Stars, Royalty and Foreign Dignitaries since 2002. Dr Ruhin Karim is the Medical Director and Lead Physician at Regency Medical. We offer a high-end VIP service to our discerning clients practicing traditional and personalised bespoke general practice. You can choose between seeing the doctor at 10 Harley Street, or the doctor will visit you at your home, hotel, or office.</p>
                         </div>
@@ -461,20 +485,88 @@
                             </ul>
                         </div>
                     </div>
-                    <div style="float: right;" class="row social-row">
-                        <i class="fab fa-facebook-square fa-2x"></i>
-                        <i class="fab fa-twitter-square fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-facebook-messenger fa-2x"></i>
-                    </div>
                 </div>
             </footer>
-
         </section>
 
-
-
-
+        <!-- Home visiting modal  -->
+        <div class="modal fade" id="homeVisiting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Home visiting</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Our lead physician Dr Karim offers a high-end VIP home visiting service. He will visit you within the comfort of your home, hotel room, or office. A female chaperone will be available at your request at no extra charge.
+                            The service which Dr Karim provides is of the highest standard possible, catering each visit completely to your individual requirements. This service will allocate up to 60 minutes per patient, ensuring a relaxed and non-rushed experience giving adequate time to discuss your case thoroughly, write prescriptions, and make any Specialist referrals.
+                            <br>
+                            We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
+                            <br>
+                            We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
+                            <ul>
+                                <li>Malaria</li>
+                                <li>Inflenza A+B</li>
+                                <li>Zika Virus</li>
+                                <li>Rubella IgG/IgM</li>
+                                <li>Prostate Specific Angtigen (PSA)</li>
+                                <li>CarcinoEmbryonic Antigen (CEA)</li>
+                                <li>Alpha-Feto Protein (AFP)</li>
+                            </ul>
+                            We are the first home visiting provider offering this unique service.
+                            <br>
+                            A full list of other rapid tests can be found in the Sexual Health Screen Service page.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Sexual health screening  -->
+        <div class="modal fade" id="sexualHealth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Home visiting</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Our lead physician Dr Karim offers a high-end VIP home visiting service. He will visit you within the comfort of your home, hotel room, or office. A female chaperone will be available at your request at no extra charge.
+                            The service which Dr Karim provides is of the highest standard possible, catering each visit completely to your individual requirements. This service will allocate up to 60 minutes per patient, ensuring a relaxed and non-rushed experience giving adequate time to discuss your case thoroughly, write prescriptions, and make any Specialist referrals.
+                            <br>
+                            We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
+                            <br>
+                            We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
+                            <ul>
+                                <li>Malaria</li>
+                                <li>Inflenza A+B</li>
+                                <li>Zika Virus</li>
+                                <li>Rubella IgG/IgM</li>
+                                <li>Prostate Specific Angtigen (PSA)</li>
+                                <li>CarcinoEmbryonic Antigen (CEA)</li>
+                                <li>Alpha-Feto Protein (AFP)</li>
+                            </ul>
+                            We are the first home visiting provider offering this unique service.
+                            <br>
+                            A full list of other rapid tests can be found in the Sexual Health Screen Service page.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </body>
 
     <!-- Optional JavaScript -->
@@ -585,7 +677,7 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             verticalCentered: false,
-            navigation: true,
+            navigation: false,
             navigationPosition: 'left',
             slidesNavigation: true,
             slidesNavPosition: 'bottom',

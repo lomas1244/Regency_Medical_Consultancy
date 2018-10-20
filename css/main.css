@@ -67,7 +67,7 @@ html, body {
 /* Desktop Site Styling ---------------------------- */
 
 .rmc-jumbo {
-    background-image: url(../img/rmc_bg_6.gif);
+    background-image: url(../img/rmc_bg_style_2.gif);
     background-position: center;
     background-size: cover;
     height: 50em;
@@ -137,11 +137,6 @@ html, body {
     color: #B59755;
 } 
 
-.service-card {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
 .flickity-page-dots .dot {
     background: #B59755 !important;
 }
@@ -169,16 +164,38 @@ button:focus {
 /* Navbar item styling dropdown
 * --------------------------------------- */
 
-.navbar-nav .nav-item {
-    background-image: linear-gradient(to right, rgba(230,194,0,1), rgba(230,194,0,0));
-    padding-left: 1em;
-    border-radius: 0.2rem;
-    margin-top: 0.4rem;
+.navbar {
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .fp-slidesNav {
     text-align: center;
+}
+
+/* Modal styling
+* --------------------------------------- */
+
+#homeVisiting .modal-header {
+    background-image: url(../img/rmc_home_visit.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 10rem;
+}
+
+#sexualHealth .modal-header {
+    background-image: url(../img/rmc_home_visit.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 10rem;
+}
+
+.modal-header h5 {
+    color: #B59755;
+    background: #fff;
+    padding: 0.4em;
+    border-radius: 0.2em;
 }
 
 /* Backgrounds will cover all the section
@@ -196,7 +213,7 @@ button:focus {
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0{
-    background-image: url(../img/rmc_bg_6.gif);
+    background-image: url(../img/rmc_bg_style_2.gif);
     background-position: center;
     background-size: cover;
 }
@@ -415,6 +432,32 @@ footer {
 
 .center-con .round:hover span:nth-child(4) {
     transform: rotate(-225deg);
+}
+
+
+/* Social Media static bar *************************************/
+
+.icon-bar {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #B59755;
+}
+
+.icon-bar a {
+    background: #000;
 }
 
 
