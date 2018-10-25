@@ -303,6 +303,8 @@ footer {
         .contact-card {
             display: none;
         }
+        
+        
 }
 
 @media only screen and (max-width: 768px) {
@@ -316,6 +318,24 @@ footer {
         font-size: 1rem;
         color: #333;
         margin-bottom: 0;
+    }
+    
+    .card-img-top {
+        min-height: 10em;
+        width: 100%;
+        
+    }
+    
+    .mobile-home-visit {
+        background-image: url(../img/rmc_home_visit.gif);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .mobile-rapid-test {
+        background-image: url(../img/rmc_sexual_health.png);
+        background-position: center;
+        background-size: cover;
     }
 }
 
