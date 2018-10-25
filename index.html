@@ -35,7 +35,7 @@
 
     </head>
 
-    <body class="cbp-spmenu-push">
+    <body class="cbp-spmenu-push" data-spy="scroll" data-target=".scroll-spy-add">
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -53,7 +53,7 @@
              theme_color="#B59755">
         </div>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-faded">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-faded scroll-spy-add">
             <a class="navbar-brand" href="index.html">
                 <img src="img/rm-logo-part.svg" width="40" height="40" alt="">
             </a>
@@ -61,30 +61,28 @@
             <div class="collapse navbar-collapse desktop-nav" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Regency Medical</a>
+                        <a class="nav-link" href="#rmc-1">Regency Medical</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Consierge</a>
+                        <a class="nav-link" href="#rmc-3">Concierge</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIP Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Home visit</a>
-                            <a class="dropdown-item" href="#">Rapid home screening</a>
-                            <a class="dropdown-item" href="#">Medical repatriation</a>
-                            <a class="dropdown-item" href="#">Global case management</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#homeVisiting">Home visit</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sexualHealth">Rapid home screening</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#medicalRepat">Medical repatriation</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#globalManage">Global case management</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Book now</a>
+                            <a class="dropdown-item typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book now</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Harley Street</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <a href="mailto:ruhinkarim@regencymedical.co.uk"><i class="fas fa-comments"></i></a>
                     <a href="tel:+441329836262"><i class="fas fa-phone"></i></a>
+                    <a style="color: #fff !important; margin: 0.4em 1em 0.4em 0;" class="nav-link btn btn-success" href="#">Medical Updates</a>
                     <a style="color: #fff !important;" class="btn btn-rmc typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
                 </form>
             </div>
@@ -100,7 +98,7 @@
             </button>
         </nav>
 
-        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left scroll-spy-add" id="cbp-spmenu-s1">
             <h3></h3>
             <a class="typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
             <a href="#secondPage">Home visit</a>
@@ -132,7 +130,7 @@
 </div>
 </div>
 </a> -->
-                    <a href="#" class="btn btn-rmc btn-lg cover-btn">Book a consultation</a>
+                    <a class="btn btn-rmc btn-lg cover-btn typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
                 </div>
 
                 <div class="section" id="section1">
@@ -141,6 +139,12 @@
                             <div class="col-md-6 rmc-part">
                                 <h1>WHY CHOOSE US?</h1>
                                 <p style="border-bottom: none;" class="rmc-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                                <div class="rmc-ipad">
+                                    <img class="rmc-ipad-img" src="img/lmc_bg_2.jpg" alt="about us support image">
+                                    <h2>ABOUT US</h2>
+                                    <p class="rmc-para">We have been operating from the world famous Harley Street in London, seeing and treating patients both from the UK and around the globe including Film Stars, Royalty and Foreign Dignitaries since 2002. Dr Ruhin Karim is the Medical Director and Lead Physician at Regency Medical. We offer a high-end VIP service to our discerning clients practicing traditional and personalised bespoke general practice. You can choose between seeing the doctor at 10 Harley Street, or the doctor will visit you at your home, hotel, or office.</p>
+
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mobile-carousel">
@@ -163,120 +167,289 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div style="margin-top: 3em;" class="rmc-ipad">
+                                    <h2>OUR TREATMENT PROCESS</h2>
+                                    <p style="border-bottom: none;" class="rmc-para">We know that it is difficult to get an appointment with your NHS GP, and more so, you may not see the same doctor on every visit. By recognising this deficiency, Regency Medical started to offer private services to all our patients since 2002. Furthermore, you may be a visitor or tourist and unexpectedly fallen ill, lost your medications, looking for the right specialist, or in need of an experienced doctor. Flexibility and choice as to how and when you use us, whether this means visiting us as a one-off or becoming a regular patient;
+                                    <ul style="color: #7e7e7e;">
+                                        <li>You will be always seen by an experienced doctor and never a nurse</li>
+                                        <li>Appointments are available at times that suits you</li>
+                                        <li>On-site medical testing and same-day imaging appointments</li>
+                                        <li>You will have access to a large network of experienced private specialists</li>
+                                        <li>Same-day Home Visiting Service</li>
+                                    </ul>
+                                    </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="section" id="section2">
-                    <div class="container rmc-con">
-                        <div class="row rmc-row">
+            <div class="section" id="section2">
+                <div class="container rmc-blank">
+                    <div style="padding-top: 3em;" class="row rmc-row rmc-part">
+                        <div class="col-md-6">
+                            <h1 class="neg-title">MEDICAL CONCIERGE</h1>
+                            <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
                         </div>
                     </div>
                 </div>
-                <div class="section" id="section3">
-                    <div class="slide" id="slide1">
-                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+            </div>
 
-                            <h3 class="card-title">Home visiting</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                            <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
-                            
-                            <div class="card-img-top mobile-home-visit"></div>
+            <div class="section" id="section3">
+                <div class="slide" id="slide1">
+                    <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
 
-                            <div class="card-link-row">
-                                <a href="#" class="btn btn-rmc card-link">Book now</a>
-                                <a href="#" class="card-link">Read more</a>
-                                <i class="fab fa-fort-awesome fa-2x"></i>
-                            </div>
+                        <h3 class="card-title">HOME VISITING</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                        <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
+                        <div class="card-link-row">
+                            <a href="#" class="btn btn-rmc card-link">Book now</a>
+                            <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
+                            <i class="fab fa-fort-awesome fa-2x"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide" id="slide2">
+                    <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+                        <h3 class="card-title">RAPID HOME TESTING</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                        <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
+                        </p>
+                        <div class="card-link-row">
+                            <a href="#" class="btn btn-rmc card-link">Book now</a>
+                            <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#sexualHealth">Read more</a>
+                            <i class="fab fa-fort-awesome fa-2x"></i>
                         </div>
 
                     </div>
-                    <div class="slide" id="slide2">
-                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
-                            <h3 class="card-title">Rapid home testing</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                            <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
-                            </p>
-                            
-                            <div class="card-img-top mobile-rapid-test"></div>
-                            
-                            <div class="card-link-row">
-                                <a href="#" class="btn btn-rmc card-link">Book now</a>
-                                <a href="#" class="card-link">Read more</a>
-                                <i class="fas fa-briefcase-medical fa-2x"></i>
-                            </div>
-                            
+                </div>
+                <div class="slide" id="slide3">
+                    <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+                        <h3 class="card-title">MEDICAL REPATRIATION</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                        <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
+                        <div class="card-link-row">
+                            <a href="#" class="btn btn-rmc card-link">Book now</a>
+                            <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
+                            <i class="fab fa-fort-awesome fa-2x"></i>
                         </div>
+
                     </div>
-                    <div class="slide" id="slide3">
-                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
-                            <h3 class="card-title">Medical repatriation</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                            <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
-                            <a href="#" class="card-link">Read more</a>
-                            <a href="#" class="card-link">Book now</a>
-                            <i class="fas fa-plane fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="slide" id="slide4">
-                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
-                            <h3 class="card-title">Global case management</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                            <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
-                            <a href="#" class="card-link">Read more</a>
-                            <a href="#" class="card-link">Book now</a>
-                            <i class="fas fa-globe fa-2x"></i>
+                </div>
+                <div class="slide" id="slide4">
+                    <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+                        <h3 class="card-title">GLOBAL CASE MANAGEMENT</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                        <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
+                        <div class="card-link-row">
+                            <a href="#" class="btn btn-rmc card-link">Book now</a>
+                            <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
+                            <i class="fab fa-fort-awesome fa-2x"></i>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
         </section>
 
-        <!-- Desktop Version -->
-        <section id="desktop-version">
+    <!-- Desktop Version -->
+    <section id="desktop-version">
 
-            <!-- The social media icon bar -->
-            <div class="icon-bar">
-                <a href="#" class="facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a> 
-                <a href="#" class="twitter">
-                    <i class="fab fa-twitter"></i>
-                </a> 
-                <a href="#" class="google">
-                    <i class="fab fa-google-plus-g"></i>
-                </a> 
-                <a href="#" class="linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="messenger">
-                    <i class="fab fa-facebook-messenger"></i>
-                </a> 
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a> 
+            <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a> 
+            <a href="#" class="google">
+                <i class="fab fa-google-plus-g"></i>
+            </a> 
+            <a href="#" class="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="messenger">
+                <i class="fab fa-facebook-messenger"></i>
+            </a> 
+        </div>
+
+        <div class="jumbotron rmc-jumbo">
+        </div>
+
+        <div class="rmc-banner">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a class="btn btn-rmc btn-block btn-lg typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">
+                            Book a consultation
+                        </a>
+                        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>  
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="jumbotron rmc-jumbo">
+        <div id="rmc-1" class="container rmc-blank">
+            <div class="row rmc-row">
+                <div class="col-md-6">
+                    <h1>WHY CHOOSE US?</h1>
+                    <p class="rmc-para rmc-desk-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                </div>
+                <div class="col-md-6">
+                    <table class="rmc-table">
+                        <tr>
+                            <td>
+                                <div class="rmc-card">
+                                    <h2>PERSONALISED SERVICE</h2>
+                                    <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="rmc-card">
+                                    <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                    <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="rmc-card">
+                                    <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                    <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                </div>
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+        </div>
 
-            <div class="rmc-banner">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">
-                            <a class="btn btn-rmc btn-block btn-lg typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">
-                                Book a consultation
-                            </a>
-                            <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>  
+
+        <section id="rmc-2" class="rmc-neg">
+            <div class="container">
+                <div class="row rmc-row">
+                    <div class="col-md-6 rmc-style-neg">
+                        <h1>VIP SERVICES</h1>
+                        <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
+                    </div>
+                </div>
+
+                <div class="row rmc-row" style="margin-bottom: 2em;">
+                    <div class="col-md-6">
+                        <div class="card service-card">
+                            <div class="card-body">
+                                <h3 class="card-title">HOME VISITING</h3>
+                                <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
+                                <a href="#" class="btn btn-rmc card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
+                                <a href="#" class="card-link">Book now</a>
+                                <i class="fab fa-fort-awesome fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card service-card">
+                            <div class="card-body">
+                                <h3 class="card-title">RAPID HOME TESTING</h3>
+                                <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
+                                </p>
+                                <a href="#" class="btn btn-rmc card-link" data-toggle="modal" data-target="#sexualHealth">Read more</a>
+                                <a href="#" class="card-link">Book now</a>
+                                <i class="fas fa-briefcase-medical fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row rmc-row">
+                    <div class="col-md-6">
+                        <div class="card service-card">
+                            <div class="card-body">
+                                <h3 class="card-title">MEDICAL REPATRIATION</h3>
+                                <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
+                                <a href="#" class="btn btn-rmc card-link" data-toggle="modal" data-target="#medicalRepat">Read more</a>
+                                <a href="#" class="card-link">Book now</a>
+                                <i class="fas fa-plane fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card service-card">
+                            <div class="card-body">
+                                <h3 class="card-title">GLOBAL CASE MANAGEMENT</h3>
+                                <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
+                                <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
+                                <a href="#" class="btn btn-rmc card-link" data-toggle="modal" data-target="#globalManage">Read more</a>
+                                <a href="#" class="card-link">Book now</a>
+                                <i class="fas fa-globe fa-2x"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div id="rmc-1" class="container rmc-blank">
+        <section id="rmc-3">
+            <div class="container rmc-blank">
+                <div style="margin-bottom: 3em;" class="row rmc-row">
+                    <div class="col-md-6">
+                        <h1>MEDICAL CONCIERGE</h1>
+                        <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
+                    </div>
+                </div>
                 <div class="row rmc-row">
                     <div class="col-md-6">
-                        <h1>WHY CHOOSE US?</h1>
-                        <p class="rmc-para rmc-desk-para">When you don’t feel at your best, we know how important it is to see a GP. By seeing our experienced doctors, we offer a wealth of knowledge and expertise in managing your illness. Getting an NHS GP appointment is not always as quick as you would like and your condition will often deteriorate before you are able to see anybody.</p>
+                        <table style="border-left: 1px solid #B59755;" class="rmc-table">
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>PERSONALISED SERVICE</h2>
+                                        <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
+                                        <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="rmc-card">
+                                        <h2>NO FORMAL REGISTRATION REQUIRED</h2>
+                                        <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="col-md-6">
                         <table class="rmc-table">
@@ -317,269 +490,118 @@
                     </div>
                 </div>
             </div>
-
-
-            <section id="rmc-2" class="rmc-neg">
-                <div class="container">
-                    <div class="row rmc-row">
-                        <div class="col-md-6 rmc-style-neg">
-                            <h1>VIP SERVICES</h1>
-                            <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
-                        </div>
-                    </div>
-
-                    <div class="row rmc-row" style="margin-bottom: 2em;">
-                        <div class="col-md-6">
-                            <div class="card service-card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Home visits</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                                    <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
-                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#homeVisiting">Read more</a>
-                                    <a href="#" class="card-link">Book now</a>
-                                    <i class="fab fa-fort-awesome fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card service-card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Sexual health screening</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                                    <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
-                                    </p>
-                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#sexualHealth">Read more</a>
-                                    <a href="#" class="card-link">Book now</a>
-                                    <i class="fas fa-briefcase-medical fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row rmc-row">
-                        <div class="col-md-6">
-                            <div class="card service-card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Medical repatriation</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                                    <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
-                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#medicalRepat">Read more</a>
-                                    <a href="#" class="card-link">Book now</a>
-                                    <i class="fas fa-plane fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card service-card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Global case management</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
-                                    <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
-                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#globalManage">Read more</a>
-                                    <a href="#" class="card-link">Book now</a>
-                                    <i class="fas fa-globe fa-2x"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="rmc-3">
-                <div class="container rmc-blank">
-                    <div style="margin-bottom: 3em;" class="row rmc-row">
-                        <div class="col-md-6">
-                            <h1>MEDICAL CONCIERGE</h1>
-                            <p class="rmc-para rmc-desk-para">Bespoke private healthcare, tailored to your needs, at your time, at your place, and at your convenience.</p>
-                        </div>
-                    </div>
-                    <div class="row rmc-row">
-                        <div class="col-md-6">
-                            <table style="border-left: 1px solid #B59755;" class="rmc-table">
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>PERSONALISED SERVICE</h2>
-                                            <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
-                                            <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>NO FORMAL REGISTRATION REQUIRED</h2>
-                                            <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <table class="rmc-table">
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>PERSONALISED SERVICE</h2>
-                                            <p class="rmc-para">We offer a high-end and personalised service to all our patients catering specifically to your own individual requirements.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>UK TRAINED &amp; QUALIFIED DOCTORS</h2>
-                                            <p class="rmc-para">All of our doctors bring a wealth of experience and are fully registered with the General Medical Council.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="rmc-card">
-                                            <h2>NO FORMAL REGISTRATION REQUIRED</h2>
-                                            <p class="rmc-para">Whether you are a tourist, visitor, or an existing NHS patient, you do not need to register with us to see one of our doctors.</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-check-circle"></i>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div id="rmc-4" class="container">
-            </div>
-
-
-            <footer style="margin-bottom: 0;" class="rmc-neg rmc-row rmc-style-neg">
-                <div class="container">
-                    <h1>ABOUT US</h1>
-                    <div style="margin-bottom: 0;" class="row ">
-
-                        <div class="col-md-4">
-                            <p class="rmc-para rmc-desk-para">We have been operating from the world famous Harley Street in London, seeing and treating patients both from the UK and around the globe including Film Stars, Royalty and Foreign Dignitaries since 2002. Dr Ruhin Karim is the Medical Director and Lead Physician at Regency Medical. We offer a high-end VIP service to our discerning clients practicing traditional and personalised bespoke general practice. You can choose between seeing the doctor at 10 Harley Street, or the doctor will visit you at your home, hotel, or office.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="rmc-para rmc-desk-para">We know that it is difficult to get an appointment with your NHS GP, and more so, you may not see the same doctor on every visit. By recognising this deficiency, Regency Medical started to offer private services to all our patients since 2002. Furthermore, you may be a visitor or tourist and unexpectedly fallen ill, lost your medications, looking for the right specialist, or in need of an experienced doctor. Flexibility and choice as to how and when you use us, whether this means visiting us as a one-off or becoming a regular patient;</p>
-                        </div>
-                        <div class="col-md-4">
-                            <ul style="color: #7e7e7e;" class="rmc-para rmc-desk-para">
-                                <li>You will be always seen by an experienced doctor and never a nurse</li>
-                                <li>Appointments are available at times that suits you</li>
-                                <li>On-site medical testing and same-day imaging appointments</li>
-                                <li>You will have access to a large network of experienced private specialists</li>
-                                <li>Same-day Home Visiting Service</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </section>
 
-        <!-- Home visiting modal  -->
-        <div class="modal fade" id="homeVisiting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Home visiting</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Our lead physician Dr Karim offers a high-end VIP home visiting service. He will visit you within the comfort of your home, hotel room, or office. A female chaperone will be available at your request at no extra charge.
-                            The service which Dr Karim provides is of the highest standard possible, catering each visit completely to your individual requirements. This service will allocate up to 60 minutes per patient, ensuring a relaxed and non-rushed experience giving adequate time to discuss your case thoroughly, write prescriptions, and make any Specialist referrals.
-                            <br>
-                            We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
-                            <br>
-                            We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
-                        <ul>
-                            <li>Malaria</li>
-                            <li>Inflenza A+B</li>
-                            <li>Zika Virus</li>
-                            <li>Rubella IgG/IgM</li>
-                            <li>Prostate Specific Angtigen (PSA)</li>
-                            <li>CarcinoEmbryonic Antigen (CEA)</li>
-                            <li>Alpha-Feto Protein (AFP)</li>
-                        </ul>
-                        We are the first home visiting provider offering this unique service.
-                        <br>
-                        A full list of other rapid tests can be found in the Sexual Health Screen Service page.
-                        </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+        <div id="rmc-4" class="container">
         </div>
 
-    <!-- Sexual health screening  -->
-    <div class="modal fade" id="sexualHealth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+        <footer style="margin-bottom: 0;" class="rmc-neg rmc-row rmc-style-neg">
+            <div class="container">
+                <h1>ABOUT US</h1>
+                <div style="margin-bottom: 0;" class="row ">
+
+                    <div class="col-md-4">
+                        <p class="rmc-para rmc-desk-para">We have been operating from the world famous Harley Street in London, seeing and treating patients both from the UK and around the globe including Film Stars, Royalty and Foreign Dignitaries since 2002. Dr Ruhin Karim is the Medical Director and Lead Physician at Regency Medical. We offer a high-end VIP service to our discerning clients practicing traditional and personalised bespoke general practice. You can choose between seeing the doctor at 10 Harley Street, or the doctor will visit you at your home, hotel, or office.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="rmc-para rmc-desk-para">We know that it is difficult to get an appointment with your NHS GP, and more so, you may not see the same doctor on every visit. By recognising this deficiency, Regency Medical started to offer private services to all our patients since 2002. Furthermore, you may be a visitor or tourist and unexpectedly fallen ill, lost your medications, looking for the right specialist, or in need of an experienced doctor. Flexibility and choice as to how and when you use us, whether this means visiting us as a one-off or becoming a regular patient;</p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul style="color: #7e7e7e;" class="rmc-para rmc-desk-para">
+                            <li>You will be always seen by an experienced doctor and never a nurse</li>
+                            <li>Appointments are available at times that suits you</li>
+                            <li>On-site medical testing and same-day imaging appointments</li>
+                            <li>You will have access to a large network of experienced private specialists</li>
+                            <li>Same-day Home Visiting Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Home visiting modal  -->
+    <div class="modal fade" id="homeVisiting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Sexual health screening</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Home visiting</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <p>
-                        Regency Medical offers a completely discreet and personalised sexual health screening service. We offer comprehensive STD screening and sexual health advice.
+                        Our lead physician Dr Karim offers a high-end VIP home visiting service. He will visit you within the comfort of your home, hotel room, or office. A female chaperone will be available at your request at no extra charge.
+                        The service which Dr Karim provides is of the highest standard possible, catering each visit completely to your individual requirements. This service will allocate up to 60 minutes per patient, ensuring a relaxed and non-rushed experience giving adequate time to discuss your case thoroughly, write prescriptions, and make any Specialist referrals.
                         <br>
-                        Screening for sexually transmitted infections (STIs) is an important part of maintaining your sexual well-being, and it is a good idea to get tested if you have unprotected sex, whether you display symptoms or not.  
+                        We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
                         <br>
-                        We offer a wide range of rapid screens for Sexually Transmitted Infections (STIs). 
-                        Rapid tests carried out at your home include:
+                        We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
                     <ul>
-                        <li>HIV 1</li>
-                        <li>HIV 2</li>
-                        <li>Chlamydia</li>
-                        <li>Gonorrhoea</li>
-                        <li>Syphilis</li>
-                        <li>Hepatitis B</li>
-                        <li>Hepatitis C</li>
-                        <li>Herpes I (NEW)</li>
-                        <li>Herpes II (NEW)</li>
-                        <li>Bacterial Vaginosis (NEW)</li>
+                        <li>Malaria</li>
+                        <li>Inflenza A+B</li>
+                        <li>Zika Virus</li>
+                        <li>Rubella IgG/IgM</li>
+                        <li>Prostate Specific Angtigen (PSA)</li>
+                        <li>CarcinoEmbryonic Antigen (CEA)</li>
+                        <li>Alpha-Feto Protein (AFP)</li>
                     </ul>
-                    We are the first clinic to be providing a home visiting service with Rapid and instant results during the visit and the first clinic to be able to provide the instant results for Herpes.
-
+                    We are the first home visiting provider offering this unique service.
+                    <br>
+                    A full list of other rapid tests can be found in the Sexual Health Screen Service page.
                     </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-rmc typeform-share button" data-dismiss="modal" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book now</a>
             </div>
         </div>
     </div>
     </div>
+
+<!-- Sexual health screening  -->
+<div class="modal fade" id="sexualHealth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Rapid home testing</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Regency Medical offers a completely discreet and personalised sexual health screening service. We offer comprehensive STD screening and sexual health advice.
+                    <br>
+                    Screening for sexually transmitted infections (STIs) is an important part of maintaining your sexual well-being, and it is a good idea to get tested if you have unprotected sex, whether you display symptoms or not.  
+                    <br>
+                    We offer a wide range of rapid screens for Sexually Transmitted Infections (STIs). 
+                    Rapid tests carried out at your home include:
+                <ul>
+                    <li>HIV 1</li>
+                    <li>HIV 2</li>
+                    <li>Chlamydia</li>
+                    <li>Gonorrhoea</li>
+                    <li>Syphilis</li>
+                    <li>Hepatitis B</li>
+                    <li>Hepatitis C</li>
+                    <li>Herpes I (NEW)</li>
+                    <li>Herpes II (NEW)</li>
+                    <li>Bacterial Vaginosis (NEW)</li>
+                </ul>
+                We are the first clinic to be providing a home visiting service with Rapid and instant results during the visit and the first clinic to be able to provide the instant results for Herpes.
+
+                </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a class="btn btn-rmc typeform-share button" data-dismiss="modal" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book now</a>
+        </div>
+    </div>
+</div>
+</div>
 
 <!-- Medical repatriation  -->
 <div class="modal fade" id="medicalRepat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -603,7 +625,8 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-rmc typeform-share button" data-dismiss="modal" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book now</a>
             </div>
         </div>
     </div>
@@ -633,7 +656,8 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-rmc typeform-share button" data-dismiss="modal" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book now</a>
             </div>
         </div>
     </div>
@@ -775,4 +799,11 @@
         })
     });
 </script>
+
+<!-- Scrollspy -->
+
+<script>
+    $('body').scrollspy({ target: '.scroll-spy-add' })
+</script>
+
 </html>
