@@ -41,6 +41,12 @@ html, body {
     margin: 0;
 }
 
+.cover-btn {
+    position: absolute;
+    bottom: 70px;
+    transform: translateX(-50%);
+}
+
 .rmc-para-2 {
     line-height: 130%;
     margin: 0;
@@ -52,6 +58,8 @@ html, body {
     padding: 1em;
     margin-bottom: 0.5em;
     min-height: 8em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .rmc-part {
@@ -104,6 +112,10 @@ html, body {
     color: #fff;
 }
 
+.btn {
+    color: #fff !important;
+}
+
 .rmc-neg {
     background: #000;
     padding-top: 4em;
@@ -146,6 +158,10 @@ html, body {
     color: #B59755;
 }
 
+.card-link-row {
+    padding-top: 1em;
+}
+
 /* Centered texts in each section
 * --------------------------------------- */
 .section{
@@ -185,6 +201,20 @@ button:focus {
 }
 
 #sexualHealth .modal-header {
+    background-image: url(../img/rmc_sexual_health.png);
+    background-size: cover;
+    background-position: top;
+    min-height: 10rem;
+}
+
+#medicalRepat .modal-header {
+    background-image: url(../img/rmc_home_visit.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 10rem;
+}
+
+#globalManage .modal-header {
     background-image: url(../img/rmc_home_visit.gif);
     background-size: cover;
     background-position: center;
@@ -196,6 +226,15 @@ button:focus {
     background: #fff;
     padding: 0.4em;
     border-radius: 0.2em;
+}
+
+.modal .close {
+    color: #B59755;
+}
+
+.modal .btn {
+    background: #B59755;
+    color: #fff;
 }
 
 /* Backgrounds will cover all the section
@@ -358,7 +397,7 @@ footer {
 /*Adding background for the slides
 * --------------------------------------- */
 .slide{
-    padding: 6% 0 0 0;
+    padding: 4% 0 0 0;
 }
 
 /* Animated arrow */

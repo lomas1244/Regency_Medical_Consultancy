@@ -104,9 +104,9 @@
             <h3></h3>
             <a class="typeform-share button" href="https://jameslomas.typeform.com/to/ucaHbP" data-mode="drawer_right" data-submit-close-delay="5" target="_blank">Book a consultation</a>
             <a href="#secondPage">Home visit</a>
-            <a href="#thirdPage">Private sexual health</a>
-            <a href="#fourthPage">Emergency channel</a>
-            <a href="#fifthPage">Shop</a>
+            <a href="#thirdPage">VIP Services</a>
+            <a href="#fourthPage">Medical Concierge</a>
+            <a href="#fifthPage">About us</a>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
             </div>
             <div class="contact-card">
@@ -132,7 +132,7 @@
 </div>
 </div>
 </a> -->
-
+                    <a href="#" class="btn btn-rmc btn-lg cover-btn">Book a consultation</a>
                 </div>
 
                 <div class="section" id="section1">
@@ -176,29 +176,39 @@
                 </div>
                 <div class="section" id="section3">
                     <div class="slide" id="slide1">
-                        <div class="card-body service-card">
+                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+
                             <h3 class="card-title">Home visiting</h3>
                             <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                             <p class="card-text">Comprehensive healthcare assessments and treatment. Traditional GP services within the comfort of your own home, hotel room, or office. Home visits at your convenience, we will always give you as much time as needed to fully assess your concerns.</p>
-                            <a href="#" class="card-link">Read more</a>
-                            <a href="#" class="card-link">Book now</a>
-                            <i class="fab fa-fort-awesome fa-2x"></i>
+                            <img class="card-img-top" src="img/rmc_home_visit.gif" alt="Card image cap">
+
+                            <div class="card-link-row">
+                                <a href="#" class="btn btn-rmc card-link">Book now</a>
+                                <a href="#" class="card-link">Read more</a>
+                                <i class="fab fa-fort-awesome fa-2x"></i>
+                            </div>
                         </div>
 
                     </div>
                     <div class="slide" id="slide2">
-                        <div class="card-body service-card">
-                            <h3 class="card-title">Sexual health screening</h3>
+                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
+                            <h3 class="card-title">Rapid home testing</h3>
                             <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                             <p class="card-text">Instant home testing facility with specially manufactured testing equipment for almost all sexual health diseases. No need to wait for results; we will test and inform you of the results during the visit. We believe we are the first clinic to offer a rapid test at your home.
                             </p>
-                            <a href="#" class="card-link">Read more</a>
-                            <a href="#" class="card-link">Book now</a>
-                            <i class="fas fa-briefcase-medical fa-2x"></i>
+                            <img class="card-img-top" src="img/rmc_sexual_health.png" alt="Card image cap">
+
+                            <div class="card-link-row">
+                                <a href="#" class="btn btn-rmc card-link">Book now</a>
+                                <a href="#" class="card-link">Read more</a>
+                                <i class="fas fa-briefcase-medical fa-2x"></i>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="slide" id="slide3">
-                        <div class="card-body service-card">
+                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
                             <h3 class="card-title">Medical repatriation</h3>
                             <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                             <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
@@ -208,7 +218,7 @@
                         </div>
                     </div>
                     <div class="slide" id="slide4">
-                        <div class="card-body service-card">
+                        <div style="margin-left: 1em; margin-right: 1em;" class="card-body service-card">
                             <h3 class="card-title">Global case management</h3>
                             <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                             <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
@@ -351,7 +361,7 @@
                                     <h3 class="card-title">Medical repatriation</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                                     <p class="card-text">Are you too unwell to travel alone? Have you fallen ill abroad? We can help. By utilising our repatriation service we will escort you with a flight doctor to your destination anywhere in the world, ensuring that you return with the highest quality of treatment possible.</p>
-                                    <a href="#" class="card-link">Read more</a>
+                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#medicalRepat">Read more</a>
                                     <a href="#" class="card-link">Book now</a>
                                     <i class="fas fa-plane fa-2x"></i>
                                 </div>
@@ -363,7 +373,7 @@
                                     <h3 class="card-title">Global case management</h3>
                                     <h6 class="card-subtitle mb-2 text-muted">Private Healthcare</h6>
                                     <p class="card-text">Manage your illness with the world's finest doctors who offer advice and treatment options. We take a detailed case review and create a concise, manageable report, making it available for specialists around the world to review and offer second opinions.</p>
-                                    <a href="#" class="card-link">Read more</a>
+                                    <a type="button" href="#" class="card-link" data-toggle="modal" data-target="#globalManage">Read more</a>
                                     <a href="#" class="card-link">Book now</a>
                                     <i class="fas fa-globe fa-2x"></i>
                                 </div>
@@ -507,201 +517,260 @@
                             We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
                             <br>
                             We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
-                            <ul>
-                                <li>Malaria</li>
-                                <li>Inflenza A+B</li>
-                                <li>Zika Virus</li>
-                                <li>Rubella IgG/IgM</li>
-                                <li>Prostate Specific Angtigen (PSA)</li>
-                                <li>CarcinoEmbryonic Antigen (CEA)</li>
-                                <li>Alpha-Feto Protein (AFP)</li>
-                            </ul>
-                            We are the first home visiting provider offering this unique service.
-                            <br>
-                            A full list of other rapid tests can be found in the Sexual Health Screen Service page.
+                        <ul>
+                            <li>Malaria</li>
+                            <li>Inflenza A+B</li>
+                            <li>Zika Virus</li>
+                            <li>Rubella IgG/IgM</li>
+                            <li>Prostate Specific Angtigen (PSA)</li>
+                            <li>CarcinoEmbryonic Antigen (CEA)</li>
+                            <li>Alpha-Feto Protein (AFP)</li>
+                        </ul>
+                        We are the first home visiting provider offering this unique service.
+                        <br>
+                        A full list of other rapid tests can be found in the Sexual Health Screen Service page.
                         </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    
+        </div>
+
     <!-- Sexual health screening  -->
-        <div class="modal fade" id="sexualHealth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Home visiting</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Our lead physician Dr Karim offers a high-end VIP home visiting service. He will visit you within the comfort of your home, hotel room, or office. A female chaperone will be available at your request at no extra charge.
-                            The service which Dr Karim provides is of the highest standard possible, catering each visit completely to your individual requirements. This service will allocate up to 60 minutes per patient, ensuring a relaxed and non-rushed experience giving adequate time to discuss your case thoroughly, write prescriptions, and make any Specialist referrals.
-                            <br>
-                            We carry a mobile pharmacy and most standard and emergency medications can be issued as required. We do not carry controlled drugs.
-                            <br>
-                            We also carry rapid diagnostic tests that are especially made for Regency Medical which can be tested during the visit and results given instantly including:
-                            <ul>
-                                <li>Malaria</li>
-                                <li>Inflenza A+B</li>
-                                <li>Zika Virus</li>
-                                <li>Rubella IgG/IgM</li>
-                                <li>Prostate Specific Angtigen (PSA)</li>
-                                <li>CarcinoEmbryonic Antigen (CEA)</li>
-                                <li>Alpha-Feto Protein (AFP)</li>
-                            </ul>
-                            We are the first home visiting provider offering this unique service.
-                            <br>
-                            A full list of other rapid tests can be found in the Sexual Health Screen Service page.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    <div class="modal fade" id="sexualHealth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sexual health screening</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <p>
+                        Regency Medical offers a completely discreet and personalised sexual health screening service. We offer comprehensive STD screening and sexual health advice.
+                        <br>
+                        Screening for sexually transmitted infections (STIs) is an important part of maintaining your sexual well-being, and it is a good idea to get tested if you have unprotected sex, whether you display symptoms or not.  
+                        <br>
+                        We offer a wide range of rapid screens for Sexually Transmitted Infections (STIs). 
+                        Rapid tests carried out at your home include:
+                    <ul>
+                        <li>HIV 1</li>
+                        <li>HIV 2</li>
+                        <li>Chlamydia</li>
+                        <li>Gonorrhoea</li>
+                        <li>Syphilis</li>
+                        <li>Hepatitis B</li>
+                        <li>Hepatitis C</li>
+                        <li>Herpes I (NEW)</li>
+                        <li>Herpes II (NEW)</li>
+                        <li>Bacterial Vaginosis (NEW)</li>
+                    </ul>
+                    We are the first clinic to be providing a home visiting service with Rapid and instant results during the visit and the first clinic to be able to provide the instant results for Herpes.
+
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-    
-    </body>
+    </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Medical repatriation  -->
+<div class="modal fade" id="medicalRepat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Medical Repatriation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Regency Medical offers a repatriation and medical escorting service.
+                    <br>
+                    Whether you have been unfortunate to fall ill whilst abroad or whether you need peace of mind with a suitably well qualified doctor escorting you from one place to another, we are here for you to make this journey safe and sound.
+                    <br>
+                    We can escort or repatriate you globally from any country to another, using commercial flights. We will provide all necessary equipment required for each individual case. 
+                    <br>
+                    Just give us a call for your requirements and we will be happy to discuss options with you. 
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Main JS -->
-    <script type="text/javascript" src="js/main.js"></script>
 
-    <!-- Slide menu -->
-    <script type="text/javascript" src="js/Slide_menu/classie.js"></script>
-    <script type="text/javascript" src="js/Slide_menu/modernizr.custom.js"></script>
+<!-- Global case management  -->
+<div class="modal fade" id="globalManage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Global case management</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Regency Medical offers a discrete and personal VIP Concierge Service. 
+                    We are here to help you navigate through your medical treatment providing access to the world’s finest Physicians and Surgeons through our database of experts.
+                    <br>
+                    We have already done the hard work and sourced the specialist that you may require. After reviewing your notes our team of doctors will use the most appropriate Consultant that you require.
+                    <br>
+                    It can be a daunting task for anyone visiting the UK to find the correct Speciality, and seeing various specialists multiple times, with unnecessary costs at every step, some of which are completely avoidable. The doctor reviewing your notes will be able to accompany you to hospital or clinic to see the Specialist. This allows us to be part of your overall treatment and offer a greater understanding of your illness at each appointment.  A more informed decision about your treatment can be made reducing the need of multiple opinions and considerable cost savings and time.
+                    <br>
+                    Just give us a call for your requirements and we will be happy to discuss options with you. 
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 
-    <script>
-        var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-            menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-            menuTop = document.getElementById( 'cbp-spmenu-s3' ),
-            menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
-            showLeft = document.getElementById( 'showLeft' ),
-            showRight = document.getElementById( 'showRight' ),
-            showTop = document.getElementById( 'showTop' ),
-            showBottom = document.getElementById( 'showBottom' ),
-            showLeftPush = document.getElementById( 'showLeftPush' ),
-            showRightPush = document.getElementById( 'showRightPush' ),
-            body = document.body;
-        showLeft.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( menuLeft, 'cbp-spmenu-open' );
-            disableOther( 'showLeft' );
-        };
-        showRight.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( menuRight, 'cbp-spmenu-open' );
-            disableOther( 'showRight' );
-        };
-        showTop.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( menuTop, 'cbp-spmenu-open' );
-            disableOther( 'showTop' );
-        };
-        showBottom.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( menuBottom, 'cbp-spmenu-open' );
-            disableOther( 'showBottom' );
-        };
-        showLeftPush.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( body, 'cbp-spmenu-push-toright' );
-            classie.toggle( menuLeft, 'cbp-spmenu-open' );
-            disableOther( 'showLeftPush' );
-        };
-        showRightPush.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( body, 'cbp-spmenu-push-toleft' );
-            classie.toggle( menuRight, 'cbp-spmenu-open' );
-            disableOther( 'showRightPush' );
-        };
-        function disableOther( button ) {
-            if( button !== 'showLeft' ) {
-                classie.toggle( showLeft, 'disabled' );
-            }
-            if( button !== 'showRight' ) {
-                classie.toggle( showRight, 'disabled' );
-            }
-            if( button !== 'showTop' ) {
-                classie.toggle( showTop, 'disabled' );
-            }
-            if( button !== 'showBottom' ) {
-                classie.toggle( showBottom, 'disabled' );
-            }
-            if( button !== 'showLeftPush' ) {
-                classie.toggle( showLeftPush, 'disabled' );
-            }
-            if( button !== 'showRightPush' ) {
-                classie.toggle( showRightPush, 'disabled' );
-            }
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Main JS -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Slide menu -->
+<script type="text/javascript" src="js/Slide_menu/classie.js"></script>
+<script type="text/javascript" src="js/Slide_menu/modernizr.custom.js"></script>
+
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        showRight = document.getElementById( 'showRight' ),
+        showTop = document.getElementById( 'showTop' ),
+        showBottom = document.getElementById( 'showBottom' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+    showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeft' );
+    };
+    showRight.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRight' );
+    };
+    showTop.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuTop, 'cbp-spmenu-open' );
+        disableOther( 'showTop' );
+    };
+    showBottom.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuBottom, 'cbp-spmenu-open' );
+        disableOther( 'showBottom' );
+    };
+    showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+    };
+    showRightPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRightPush' );
+    };
+    function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+            classie.toggle( showLeft, 'disabled' );
         }
-    </script>
+        if( button !== 'showRight' ) {
+            classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+            classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+            classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+            classie.toggle( showRightPush, 'disabled' );
+        }
+    }
+</script>
 
-    <!-- Flickity slider -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Flickity slider -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <script>
-        $('.main-carousel').flickity({
-            // options
-            cellAlign: 'left',
-            contain: true,
-            freeScroll: true
-        });
-    </script>
-
-
-    <script>
-        $('.mobile-carousel').flickity({
-            // options
-            cellAlign: 'left',
-            contain: true,
-            freeScroll: true,
-            prevNextButtons: false
-        });
-    </script>
-
-    <!-- FullPage JS -->
-
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            verticalCentered: false,
-            navigation: false,
-            navigationPosition: 'left',
-            slidesNavigation: true,
-            slidesNavPosition: 'bottom',
-
-            //Design
-            controlArrows: false,
-
-            //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-            css3:false
-        });
-    </script>
+<script>
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        freeScroll: true
+    });
+</script>
 
 
-    <!-- NavBar mobile button -->
+<script>
+    $('.mobile-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        freeScroll: true,
+        prevNextButtons: false
+    });
+</script>
 
-    <script>
-        $(function() {
-            //toggle class open on button
-            $('#exCollapsingNavbar').on('hide.bs.collapse', function () {
-                $('.navbar-toggler').removeClass('open');
-            })
-            $('#exCollapsingNavbar').on('show.bs.collapse', function () {
-                $('.navbar-toggler').addClass('open');
-            })
-        });
-    </script>
+<!-- FullPage JS -->
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+        navigation: false,
+        navigationPosition: 'left',
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+
+        //Design
+        controlArrows: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3:false
+    });
+</script>
+
+
+<!-- NavBar mobile button -->
+
+<script>
+    $(function() {
+        //toggle class open on button
+        $('#exCollapsingNavbar').on('hide.bs.collapse', function () {
+            $('.navbar-toggler').removeClass('open');
+        })
+        $('#exCollapsingNavbar').on('show.bs.collapse', function () {
+            $('.navbar-toggler').addClass('open');
+        })
+    });
+</script>
 </html>
