@@ -88,10 +88,22 @@ body {
     margin-bottom: 2em;
     }
 
+.ipad-card {
+    background: none;
+}
+
+.ipad-concierge td {
+    padding: 0 !important;
+}
+
+.ipad-concierge h2 {
+    color: #fff;
+}
+
 /* Desktop Site Styling ---------------------------- */
 
 .rmc-jumbo {
-    background-image: url(../img/rmc_bg_style_2.gif);
+    background-image: url(../img/rmc_bg_7.gif);
     background-position: center;
     background-size: cover;
     height: 50em;
