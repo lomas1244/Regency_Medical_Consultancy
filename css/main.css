@@ -103,7 +103,7 @@ body {
 /* Desktop Site Styling ---------------------------- */
 
 .rmc-jumbo {
-    background-image: url(../img/rmc_bg_7.gif);
+    background-image: url(../img/rmc_bg_FINAL.gif);
     background-position: center;
     background-size: cover;
     height: 50em;
@@ -274,33 +274,7 @@ a .dropdown-item :focus {
 /* Modal styling
 * --------------------------------------- */
 
-#homeVisiting .modal-header {
-    background-image: url(../img/rmc_home_visit.gif);
-    background-size: cover;
-    background-position: center;
-    min-height: 10rem;
-}
 
-#sexualHealth .modal-header {
-    background-image: url(../img/rmc_sexual_health.png);
-    background-size: cover;
-    background-position: top;
-    min-height: 10rem;
-}
-
-#medicalRepat .modal-header {
-    background-image: url(../img/rmc_home_visit.gif);
-    background-size: cover;
-    background-position: center;
-    min-height: 10rem;
-}
-
-#globalManage .modal-header {
-    background-image: url(../img/rmc_home_visit.gif);
-    background-size: cover;
-    background-position: center;
-    min-height: 10rem;
-}
 
 .modal-header h5 {
     color: #B59755;
@@ -328,7 +302,7 @@ a .dropdown-item :focus {
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0{
-    background-image: url(../img/rmc_bg_style_2.gif);
+    background-image: url(../img/rmc_bg_FINAL.gif);
     background-position: center;
     background-size: cover;
 }
@@ -496,6 +470,10 @@ footer {
         border-bottom: 1px solid #B59755;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+    }
+    
+    .rmc_table_desktop {
+        padding-top: 5em;
     }
 
 }
